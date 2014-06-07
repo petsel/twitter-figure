@@ -7,8 +7,8 @@
 		<link rel="Stylesheet" href="./src/styles/style.css">
 	</head>
 	<body>
-		<!--<svg class="chart"></svg>-->
+		<svg class="chart"></svg>
 		<script src="./src/scripts/openess.js"></script>
-		<!--<script src="./src/scripts/barchart.js"></script>-->
+		<script src="./src/scripts/barchart.js"></script>
 	</body>
 </html>
