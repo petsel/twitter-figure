@@ -32,12 +32,14 @@
 <!-- # include virtual="/html/includes/icon.shtml" -->
 
 
-    <link type="text/css" rel="stylesheet" href="/src/styles/tf.css">
+    <link type="text/css" rel="stylesheet" href="./assets/styles/css/defaults.css">
+    <link type="text/css" rel="stylesheet" href="./assets/styles/css/category-matcher.css"><!--
+    <link type="text/css" rel="stylesheet" href="./assets/styles/css/add-more-css-modules-and-change-names.css">//-->
 
     <!-- All JavaScript at the bottom, except this Modernizr build.
          Modernizr enables HTML5 elements & feature detects for optimal performance.
          Create your own custom Modernizr build: www.modernizr.com/download/ -->
-    <script src="./src/scripts/lib/base/modernizr.dev.min.js"></script>
+    <script src="./assets/scripts/js/vendors/modernizr.dev.min.js"></script>
   </head>
 
 
@@ -59,13 +61,139 @@
     <div id="page">
 
 
+      <article class="category-matcher">
+        <form class="category-filter">
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="category-filter" value="best-buddies">
+                <span>Best Buddies</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="category-filter" value="worst-enemies">
+                <span>Worst Enemies</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="category-filter" value="party-kings">
+                <span>Party Kings</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="category-filter" value="workhorses">
+                <span>Workhorses</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="category-filter" value="perfect-spies">
+                <span>Perfect Spies</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="category-filter" value="special-cases">
+                <span>Special Cases</span>
+              </label>
+            </li>
+          </ul>
+        </form>
+        <section class="filter-results">
+          <ul>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/473972654521585664/WUWL4BmR_400x400.png" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/425808826063781888/_gMpLBUr_400x400.jpeg" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/3128744067/d08706cf66bff0775147de6a360838f8_400x400.jpeg" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/1666904408/codepo8_400x400.png" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/471179135746723840/b6zdA4L0_400x400.png" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/473972654521585664/WUWL4BmR_400x400.png" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/425808826063781888/_gMpLBUr_400x400.jpeg" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/3128744067/d08706cf66bff0775147de6a360838f8_400x400.jpeg" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/1666904408/codepo8_400x400.png" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/471179135746723840/b6zdA4L0_400x400.png" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/473972654521585664/WUWL4BmR_400x400.png" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/425808826063781888/_gMpLBUr_400x400.jpeg" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/3128744067/d08706cf66bff0775147de6a360838f8_400x400.jpeg" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/1666904408/codepo8_400x400.png" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/471179135746723840/b6zdA4L0_400x400.png" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/473972654521585664/WUWL4BmR_400x400.png" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/425808826063781888/_gMpLBUr_400x400.jpeg" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/3128744067/d08706cf66bff0775147de6a360838f8_400x400.jpeg" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/1666904408/codepo8_400x400.png" alt="" title="">
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/profile_images/471179135746723840/b6zdA4L0_400x400.png" alt="" title="">
+            </li>
+          </ul>
+        </section>
+      </article>
+
+
     </div><!-- "#page" //-->
 
 
 
-    <script src="./src/scripts/lib/base/es5-shim.min.js"></script>
-    <script src="./src/scripts/lib/base/jquery-1.11.1.min.js"></script>
+    <script src="./assets/scripts/js/vendors/es5-shim.min.js"></script>
+    <script src="./assets/scripts/js/vendors/jquery-1.11.1.min.js"></script>
 
-    <script src="./src/scripts/lib/base/d3.js"></script>
+    <script src="./assets/scripts/js/vendors/d3.js"></script>
+
+<!--
+    <script id="json-mock-data_go-to-space" type="text/plain">
+      [{"id":736,"org_id":736,"name":"Podio","logo":3917,"image":{"perma_link":null,"hosted_by":"podio","hosted_by_humanized_name":"Podio","thumbnail_link":"https://d3szoh0f46td6t.cloudfront.net/public/3917","link":"https://d3szoh0f46td6t.cloudfront.net/public/3917","file_id":3917},"spaces":[{"id":52456,"space_id":52456,"name":"Acceleration","url":"https://hoist.podio.com/acceleration/","url_label":"acceleration","org_id":736,"contact_count":null,"member_count":null,"app_count":null,"role":"regular","rights":["view_members","add_task","add_widget","subscribe","add_file","add_user_light","add_status","add_user","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366359320,"expires_in":20650,"channel":"/space/52456","signature":"5b04f5c9e1c5984bb32e2986b863c75601b62296"},"rank":33},{"id":11955,"space_id":11955,"name":"Agile","url":"https://hoist.podio.com/agile/","url_label":"agile","org_id":736,"contact_count":null,"member_count":null,"app_count":null,"role":"admin","rights":["view_members","add_task","add_widget","subscribe","delete","update","add_file","add_hook","add_user_light","add_status","add_user","share","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366358596,"expires_in":19926,"channel":"/space/11955","signature":"9d36d2c3f2df587cd6127f3700b8030d866237c8"},"rank":41},{"id":2168,"space_id":2168,"name":"API","url":"https://hoist.podio.com/api/","url_label":"api","org_id":736,"contact_count":null,"member_count":null,"app_count":null,"role":"admin","rights":["view_members","add_task","add_widget","subscribe","delete","update","add_file","add_hook","add_user_light","add_status","add_user","share","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366359217,"expires_in":20547,"channel":"/space/2168","signature":"3dda35b0ac3b537cc80441bc38008c3155545889"},"rank":52},{"id":3179,"space_id":3179,"name":"Design","url":"https://hoist.podio.com/design/","url_label":"design","org_id":736,"contact_count":null,"member_count":null,"app_count":null,"role":"regular","rights":["view_members","add_task","add_widget","subscribe","add_file","add_user_light","add_status","add_user","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366359194,"expires_in":20524,"channel":"/space/3179","signature":"1841b644172e1078e7e9f81fcacd8ee28343f9fa"},"rank":6},{"id":207,"space_id":207,"name":"Development","url":"https://hoist.podio.com/development/","url_label":"development","org_id":736,"contact_count":null,"member_count":null,"app_count":null,"role":"admin","rights":["view_members","add_task","add_widget","subscribe","delete","update","add_file","add_hook","add_user_light","add_status","add_user","share","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366359164,"expires_in":20494,"channel":"/space/207","signature":"d02aff4711ed2f3f54a10218f2a9c303cd7d59c8"},"rank":1},{"id":70,"space_id":70,"name":"Intranet","url":"https://hoist.podio.com/hoistaps/","url_label":"hoistaps","org_id":736,"contact_count":null,"member_count":null,"app_count":null,"role":"regular","rights":["view_members","add_task","add_widget","subscribe","add_file","add_user_light","add_status","add_user","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366359194,"expires_in":20524,"channel":"/space/70","signature":"c17383959230989c1145b77c4a8b706ca679eb24"},"rank":11}],"url":"https://hoist.podio.com/","url_label":"hoist","premium":true,"role":"regular","status":"active","sales_agent_id":7156,"created_on":null,"user_limit":100,"member_count":null,"contact_count":null,"billing_interval":null,"rights":["add_conversation","update","add_contract","view_admins","statistics","add_space","view"],"verified_domain":null,"domains":["hoisthq.com","podio.com"],"rank":1,"contract_status":"full","type":"sponsored","segment":null,"segment_size":null,"grants_count":39,"allow_add_space":null,"child_orgs":[],"active?":true,"admin?":false,"upgradable?":true,"not_upgraded?":false,"partially_upgraded?":false,"employee?":true,"premium?":true,"first_domain":"hoisthq.com"},{"id":44315,"org_id":44315,"name":"CopenhagenJS","logo":20356965,"image":{"perma_link":null,"hosted_by":"podio","hosted_by_humanized_name":"Podio","thumbnail_link":"https://d3szoh0f46td6t.cloudfront.net/public/20356965","link":"https://d3szoh0f46td6t.cloudfront.net/public/20356965","file_id":20356965},"spaces":[{"id":191599,"space_id":191599,"name":"ColdFront Conference","url":"https://copenhagenjs.podio.com/theconference/","url_label":"theconference","org_id":44315,"contact_count":null,"member_count":null,"app_count":null,"role":"admin","rights":["view_members","add_task","add_widget","subscribe","delete","update","add_file","add_hook","add_user_light","add_status","add_user","share","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366358596,"expires_in":19926,"channel":"/space/191599","signature":"9acf84b5ff9684c7f93ff7a4415a05fcf4e8262e"},"rank":1},{"id":86822,"space_id":86822,"name":"CopenhagenJS","url":"https://copenhagenjs.podio.com/copenhagenjs/","url_label":"copenhagenjs","org_id":44315,"contact_count":null,"member_count":null,"app_count":null,"role":"admin","rights":["view_members","add_task","add_widget","subscribe","delete","update","add_file","add_hook","add_user_light","add_status","add_user","share","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366358596,"expires_in":19926,"channel":"/space/86822","signature":"28d541b1fb25c26f8ed790d5f324f69ac993ade6"},"rank":3},{"id":131837,"space_id":131837,"name":"Employee Network","url":"https://copenhagenjs.podio.com/employeenetwork/","url_label":"employeenetwork","org_id":44315,"contact_count":null,"member_count":null,"app_count":null,"role":"admin","rights":["view_members","add_task","add_widget","subscribe","update","add_file","add_hook","add_status","add_user","add_contact","view"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"emp_network","premium":false,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366358596,"expires_in":19926,"channel":"/space/131837","signature":"62e55f02ed5ed3ad393b32d1dcfb5f5197faaa80"},"rank":2}],"url":"https://copenhagenjs.podio.com/","url_label":"copenhagenjs","premium":true,"role":"admin","status":"active","sales_agent_id":16456,"created_on":null,"user_limit":10,"member_count":null,"contact_count":null,"billing_interval":null,"rights":["add_conversation","add_widget","update","add_contract","view_admins","statistics","add_space","view"],"verified_domain":null,"domains":[],"rank":4,"contract_status":"full","type":"sponsored","segment":null,"segment_size":null,"grants_count":0,"allow_add_space":null,"child_orgs":[],"active?":true,"admin?":true,"upgradable?":true,"not_upgraded?":false,"partially_upgraded?":false,"employee?":true,"premium?":true,"first_domain":null},{"id":736,"org_id":736,"name":"Podio","logo":3917,"image":{"perma_link":null,"hosted_by":"podio","hosted_by_humanized_name":"Podio","thumbnail_link":"https://d3szoh0f46td6t.cloudfront.net/public/3917","link":"https://d3szoh0f46td6t.cloudfront.net/public/3917","file_id":3917},"spaces":[{"id":52456,"space_id":52456,"name":"Acceleration","url":"https://hoist.podio.com/acceleration/","url_label":"acceleration","org_id":736,"contact_count":null,"member_count":null,"app_count":null,"role":"regular","rights":["view_members","add_task","add_widget","subscribe","add_file","add_user_light","add_status","add_user","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366359320,"expires_in":20650,"channel":"/space/52456","signature":"5b04f5c9e1c5984bb32e2986b863c75601b62296"},"rank":33},{"id":11955,"space_id":11955,"name":"Agile","url":"https://hoist.podio.com/agile/","url_label":"agile","org_id":736,"contact_count":null,"member_count":null,"app_count":null,"role":"admin","rights":["view_members","add_task","add_widget","subscribe","delete","update","add_file","add_hook","add_user_light","add_status","add_user","share","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366358596,"expires_in":19926,"channel":"/space/11955","signature":"9d36d2c3f2df587cd6127f3700b8030d866237c8"},"rank":41},{"id":2168,"space_id":2168,"name":"API","url":"https://hoist.podio.com/api/","url_label":"api","org_id":736,"contact_count":null,"member_count":null,"app_count":null,"role":"admin","rights":["view_members","add_task","add_widget","subscribe","delete","update","add_file","add_hook","add_user_light","add_status","add_user","share","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366359217,"expires_in":20547,"channel":"/space/2168","signature":"3dda35b0ac3b537cc80441bc38008c3155545889"},"rank":52},{"id":3179,"space_id":3179,"name":"Design","url":"https://hoist.podio.com/design/","url_label":"design","org_id":736,"contact_count":null,"member_count":null,"app_count":null,"role":"regular","rights":["view_members","add_task","add_widget","subscribe","add_file","add_user_light","add_status","add_user","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366359194,"expires_in":20524,"channel":"/space/3179","signature":"1841b644172e1078e7e9f81fcacd8ee28343f9fa"},"rank":6},{"id":207,"space_id":207,"name":"Development","url":"https://hoist.podio.com/development/","url_label":"development","org_id":736,"contact_count":null,"member_count":null,"app_count":null,"role":"admin","rights":["view_members","add_task","add_widget","subscribe","delete","update","add_file","add_hook","add_user_light","add_status","add_user","share","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366359164,"expires_in":20494,"channel":"/space/207","signature":"d02aff4711ed2f3f54a10218f2a9c303cd7d59c8"},"rank":1},{"id":70,"space_id":70,"name":"Intranet","url":"https://hoist.podio.com/hoistaps/","url_label":"hoistaps","org_id":736,"contact_count":null,"member_count":null,"app_count":null,"role":"regular","rights":["view_members","add_task","add_widget","subscribe","add_file","add_user_light","add_status","add_user","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366359194,"expires_in":20524,"channel":"/space/70","signature":"c17383959230989c1145b77c4a8b706ca679eb24"},"rank":11}],"url":"https://hoist.podio.com/","url_label":"hoist","premium":true,"role":"regular","status":"active","sales_agent_id":7156,"created_on":null,"user_limit":100,"member_count":null,"contact_count":null,"billing_interval":null,"rights":["add_conversation","update","add_contract","view_admins","statistics","add_space","view"],"verified_domain":null,"domains":["hoisthq.com","podio.com"],"rank":1,"contract_status":"full","type":"sponsored","segment":null,"segment_size":null,"grants_count":39,"allow_add_space":null,"child_orgs":[],"active?":true,"admin?":false,"upgradable?":true,"not_upgraded?":false,"partially_upgraded?":false,"employee?":true,"premium?":true,"first_domain":"hoisthq.com"},{"id":44315,"org_id":44315,"name":"CopenhagenJS","logo":20356965,"image":{"perma_link":null,"hosted_by":"podio","hosted_by_humanized_name":"Podio","thumbnail_link":"https://d3szoh0f46td6t.cloudfront.net/public/20356965","link":"https://d3szoh0f46td6t.cloudfront.net/public/20356965","file_id":20356965},"spaces":[{"id":191599,"space_id":191599,"name":"ColdFront Conference","url":"https://copenhagenjs.podio.com/theconference/","url_label":"theconference","org_id":44315,"contact_count":null,"member_count":null,"app_count":null,"role":"admin","rights":["view_members","add_task","add_widget","subscribe","delete","update","add_file","add_hook","add_user_light","add_status","add_user","share","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366358596,"expires_in":19926,"channel":"/space/191599","signature":"9acf84b5ff9684c7f93ff7a4415a05fcf4e8262e"},"rank":1},{"id":86822,"space_id":86822,"name":"CopenhagenJS","url":"https://copenhagenjs.podio.com/copenhagenjs/","url_label":"copenhagenjs","org_id":44315,"contact_count":null,"member_count":null,"app_count":null,"role":"admin","rights":["view_members","add_task","add_widget","subscribe","delete","update","add_file","add_hook","add_user_light","add_status","add_user","share","add_contact","view","add_app"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"regular","premium":true,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366358596,"expires_in":19926,"channel":"/space/86822","signature":"28d541b1fb25c26f8ed790d5f324f69ac993ade6"},"rank":3},{"id":131837,"space_id":131837,"name":"Employee Network","url":"https://copenhagenjs.podio.com/employeenetwork/","url_label":"employeenetwork","org_id":44315,"contact_count":null,"member_count":null,"app_count":null,"role":"admin","rights":["view_members","add_task","add_widget","subscribe","update","add_file","add_hook","add_status","add_user","add_contact","view"],"post_on_new_app":null,"post_on_new_member":null,"subscribed":null,"privacy":null,"auto_join":null,"type":"emp_network","premium":false,"last_activity_on":null,"created_on":null,"is_overdue":null,"push":{"timestamp":1366358596,"expires_in":19926,"channel":"/space/131837","signature":"62e55f02ed5ed3ad393b32d1dcfb5f5197faaa80"},"rank":2}],"url":"https://copenhagenjs.podio.com/","url_label":"copenhagenjs","premium":true,"role":"admin","status":"active","sales_agent_id":16456,"created_on":null,"user_limit":10,"member_count":null,"contact_count":null,"billing_interval":null,"rights":["add_conversation","add_widget","update","add_contract","view_admins","statistics","add_space","view"],"verified_domain":null,"domains":[],"rank":4,"contract_status":"full","type":"sponsored","segment":null,"segment_size":null,"grants_count":0,"allow_add_space":null,"child_orgs":[],"active?":true,"admin?":true,"upgradable?":true,"not_upgraded?":false,"partially_upgraded?":false,"employee?":true,"premium?":true,"first_domain":null}]
+    </script>
+//-->
+
+    <script src="./assets/scripts/js/app/lib/RegExp.patch.js"></script>
+    <script src="./assets/scripts/js/app/lib/RegExp.escape-toSearch.js"></script>
+    <script src="./assets/scripts/js/app/lib/Observable.SignalsAndSlots.js"></script>
+
+
+    <script src="./assets/scripts/js/app/namespace.js"></script><!--
+    <script src="./assets/scripts/js/app/presenter/user-navigation_active-link.js"></script>
+
+    <script src="./assets/scripts/js/app/model/go-to-space_user-list.js"></script>
+    <script src="./assets/scripts/js/app/view/go-to-space_user-list.js"></script>
+    <script src="./assets/scripts/js/app/presenter/go-to-space_navigator.js"></script>//-->
   </body>
 </html>

@@ -1,0 +1,21 @@
+.category-matcher,
+.category-filter,
+.filter-results {
+  position: relative;
+}
+
+.category-filter ul,
+.filter-results ul {
+  clear: both;
+  display: inline-block;
+  position: relative;
+}
+.category-filter li,
+.filter-results li {
+  float: left;
+  position: relative;
+}
+.filter-results img {
+  height: auto;
+  width: 100px;
+}
