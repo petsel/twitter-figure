@@ -31,7 +31,7 @@
 
 <!-- # include virtual="/html/includes/icon.shtml" -->
 
-	<link rel="Stylesheet" href="./assets//styles/style.css">
+	<link rel="Stylesheet" href="./src/styles/style.css">
     <link type="text/css" rel="stylesheet" href="assets/styles/css/layout.css">
     <link type="text/css" rel="stylesheet" href="./assets/styles/css/category-matcher.css">
     <link type="text/css" rel="stylesheet" href="./assets/styles/css/traits-chart.css"><!--
@@ -211,15 +211,7 @@
         </section>
 
         <section class="match-details">
-
-        </section>
-      </article>
-
-
-    </div><!-- "#page" //-->
-
-	<div>
-				<h3>consc</h3>
+			<h3>consc</h3>
 			<svg id="consc"></svg>
 			<h3>openn</h3>
 			<svg id="openn"></svg>
@@ -229,8 +221,13 @@
 			<svg id="agree"></svg>
 			<h3>neuro</h3>
 			<svg id="neuro"></svg>
-	</div>
-	
+        </section>
+      </article>
+
+
+    </div><!-- "#page" //-->
+
+
     <script src="./assets/scripts/js/vendors/json2.min.js"></script>
     <script src="./assets/scripts/js/vendors/es5-shim.min.js"></script>
     <script src="./assets/scripts/js/vendors/jquery-1.11.1.min.js"></script>
@@ -256,6 +253,6 @@
     <script src="assets/scripts/js/app/presenter/category-filter.js"></script>
     <script src="assets/scripts/js/app/presenter/category-matches.js"></script>
 	
-	<script src="assets/scripts/js/matching.js"></script>
+	<script src="/assets/scripts/scripts/openess.js"></script>
   </body>
 </html>

@@ -61,7 +61,7 @@ var svg5 = d3.select('#neuro')
 	.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 	
 	
-d3.tsv('./assets//data/agree.tsv', function(error, data) {
+d3.tsv('./assets/data/agree.tsv', function(error, data) {
 	var cleanDataObj = {}, cleanDataXAry = [], cleanDataYAry = [];
 
 	data.forEach(function(d) {
