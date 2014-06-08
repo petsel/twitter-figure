@@ -22,11 +22,17 @@
     $categoryMatchList,
 
 
+    baseMatchesModel,
+
+
     getJsonMockData = function (mockId) {
       return document.getElementById("json-mock-data_" + mockId).text.trim();
     },
 
 
+    clearMatchDetails = function () {
+      $matchDetails.empty();
+    },
     clearMatchList = function () {
       $categoryMatchList.empty();
     },
@@ -39,22 +45,31 @@
     },
 
 
+    refineMatchList = function (categoryType) {
+
+      var matchesModel =
+
+        categoryType
+
+        ? MatchesModel.filterModelByCategory(baseMatchesModel, categoryType)
+        : baseMatchesModel
+      ;
+
+      clearMatchDetails();
+      clearMatchList();
+
+      renderMatchList(matchesModel);
+    },
     createMatchList = function () {
 //console.log("CategoryMatches :: createMatchList", getJsonMockData("category-matches"));
 
-      var matchesModel = MatchesModel.createModel(
+      baseMatchesModel = MatchesModel.createModel(
         JSON.parse(getJsonMockData("category-matches"))
       );
-console.log("CategoryMatches :: createMatchList", matchesModel);
+console.log("CategoryMatches :: createMatchList", baseMatchesModel);
 
       clearMatchList();
-      renderMatchList(matchesModel);
-    },
-
-
-    handleCategoryChange = function (evt) {
-console.log("CategoryMatches :: handleCategoryChange", evt);
-
+      renderMatchList(baseMatchesModel);
     },
 
 
@@ -66,10 +81,17 @@ console.log("CategoryMatches :: handleCategoryChange", evt);
         $matchDetails[0].appendChild(childNode.cloneNode(true));
       });
     },
+
+
     handleMatchDetails = function (evt) {
       evt.stopPropagation();
 
       showMatchDetailsFromItemQuery($(evt.currentTarget));
+    },
+    handleCategoryChange = function (evt) {
+console.log("CategoryMatches :: handleCategoryChange", evt);
+
+      refineMatchList(evt.categoryType);
     },
 
 
@@ -84,7 +106,7 @@ console.log("CategoryMatches :: initializePresenter");
 
       createMatchList();
 
-      $categoryMatches.on("click", "> ul > li", handleMatchDetails)
+      $categoryMatches.on("click", "> ul > li", handleMatchDetails);
 
       CategoryFilter.addEventListener("categorychange", handleCategoryChange);
       CategoryFilter.initialize();

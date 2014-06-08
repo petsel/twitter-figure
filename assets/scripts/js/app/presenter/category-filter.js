@@ -37,9 +37,9 @@
       }
 
       module.dispatchEvent({
-        type        : "categorychange",
-        filterType  : currentCategoryControl ? currentCategoryControl.value : "",
-        itemQuery   : $categoryItem
+        type          : "categorychange",
+        categoryType  : currentCategoryControl ? currentCategoryControl.value : "",
+        itemQuery     : $categoryItem
       });
     },
     handleCategoryChangeDelayed = function (evt) {

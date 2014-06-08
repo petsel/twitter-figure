@@ -1,6 +1,6 @@
 
 
-.category-matcher,
+/*.category-matcher,*/
 .category-filter,
 .category-matches {
   position: relative;
@@ -57,4 +57,15 @@
   bottom: 0;
   width: 100%;
   height: 50%;
+}
+
+
+.match-details {
+  position: fixed;
+  right: 20%;
+  top: 35.4%;
+}
+.match-details h3,
+.match-details h4 {
+  margin: 5px;
 }
