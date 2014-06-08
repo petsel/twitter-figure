@@ -27,36 +27,36 @@
 
       "creative-minds": function (matchData) {
         return (
-              (matchData.traitDataMap.openness      >= 70)
-          &&  (matchData.traitDataMap.neuroticism   >= 70)
+              (matchData.traitDataMap.openness      >= 50)
+          &&  (matchData.traitDataMap.neuroticism   >= 60)
         );
       },
       "best-buddies": function (matchData) {
         return (
-              (matchData.traitDataMap.openness      >= 70)
-          &&  (matchData.traitDataMap.agreeableness >= 70)
-          &&  (matchData.traitDataMap.neuroticism   <= 30)
+              (matchData.traitDataMap.openness      >= 50)
+          &&  (matchData.traitDataMap.agreeableness >= 60)
+          &&  (matchData.traitDataMap.neuroticism   <= 40)
         );
       },
       "workhorses": function (matchData) {
         return (
-              (matchData.traitDataMap.consciousness >= 70)
+              (matchData.traitDataMap.consciousness >= 60)
           &&  (matchData.traitDataMap.extraversion  >= 50)
-          &&  (matchData.traitDataMap.agreeableness >= 50)
+          &&  (matchData.traitDataMap.agreeableness >= 40)
         );
       },
       "happy-spouses": function (matchData) {
         return (
-              (matchData.traitDataMap.openness      >= 70)
-          &&  (matchData.traitDataMap.agreeableness >= 70)
-          &&  (matchData.traitDataMap.neuroticism   <= 30)
+              (matchData.traitDataMap.openness      >= 60)
+          &&  (matchData.traitDataMap.agreeableness >= 60)
+          &&  (matchData.traitDataMap.neuroticism   <= 50)
         );
       },
       "party-kings": function (matchData) {
         return (
               (matchData.traitDataMap.openness      >= 50)
-          &&  (matchData.traitDataMap.consciousness <= 30)
-          &&  (matchData.traitDataMap.extraversion  >= 70)
+          &&  (matchData.traitDataMap.consciousness <= 50)
+          &&  (matchData.traitDataMap.extraversion  >= 50)
         );
       }/*,
       "special_precondition": function (matchData) {

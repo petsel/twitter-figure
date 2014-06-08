@@ -3,13 +3,13 @@
 dl.traits dt {
   clear: both;
   float: left;
-  width: 50%;
+  width: 58%;
   height: 10px;
 }
 dl.traits dt + dd {
   position: relative;
   float: right;
-  width: 50%;
+  width: 42%;
   height: 16px;
   margin-bottom: 4px;
   outline: 1px solid #55acee;
@@ -22,7 +22,7 @@ dl.traits dt + dd > span {
   width: auto;
   height: 100%;
   font-size: 14px;
-  line-height: 110%;
+  line-height: 115%;
   text-indent: 3px;
   background-color: #55acee;
 }

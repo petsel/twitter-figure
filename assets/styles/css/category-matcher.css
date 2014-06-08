@@ -5,6 +5,9 @@
 .category-matches {
   position: relative;
 }
+.category-filter {
+  margin: 20px 0;
+}
 
 .category-filter ul,
 .category-matches ul {
@@ -44,6 +47,7 @@
   width: 100%;
   padding: 5px 0;
   color: #333;
+  font-size: 14px;
   background-color: rgba(255, 255, 255, .7);
   outline: 1px solid #333;
   text-indent: 3px;
@@ -63,7 +67,7 @@
 .match-details {
   position: fixed;
   right: 20%;
-  top: 35.4%;
+  top: 33.4%;
 }
 .match-details h3,
 .match-details h4 {

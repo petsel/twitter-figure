@@ -4,6 +4,13 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,audio,canvas,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}body{line-height:1;}article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote{display:block;}nav ul{list-style:none;}ol{list-style:decimal;}ul{list-style:disc;}ul ul{list-style:circle;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}ins{text-decoration:underline;}del{text-decoration:line-through;}mark{background:none;}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input[type=submit],input[type=button],button{margin:0!important;padding:0!important;}input,select,a img{vertical-align:middle;}
 
 
+body {
+  font-family: Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, serif;
+}
+
 
 ul, ol, li {
   list-style: none;
@@ -21,16 +28,39 @@ ul, ol, li {
 }
 
 
-article.intro {
+article.description {
   text-align: center;
   margin: 35px 0;
 }
-article.intro h2 {
+article.description h2 {
   font-size: 1.3em;
 }
-article.intro h2,
-article.intro h5 {
+article.description h2,
+article.description h5 {
   margin: 15px 0;
 }
-article.intro p {
+article.description h5 em {
+  font-weight: normal;
+}/*
+article.description p {
+}*/
+
+
+article.description.legend {
+  width: 70%;
+  text-align: left;
+  margin-top: 70px;
 }
+article.description.legend h2 {
+  margin: 15px 0 0 0;
+}
+article.description.legend h3 {
+  margin: 15px 0 5px 0;
+}
+
+
+svg {
+  margin-left: -35px;
+  margin-top: -15px;
+}
+

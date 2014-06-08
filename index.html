@@ -62,7 +62,7 @@
     <div id="page">
 
 
-      <article class="intro">
+      <article class="description">
         <h2>Personality types of world’s most powerful celebrities: Who new Barack Obama had a creative mind?</h2>
         <h5><em>by Natalia, Tim, Aurelius, Michael and Peter</em></h5>
         <p>A comprehensive description of human identity has only become available in the past decades.  Based on five major traits - openness, conscientiousness, extraversion, agreeableness and neuroticism – we analyzed personality types of the world’s 150 most powerful celebrities and filtered out their character types. Scroll down to learn more about separate traits and how there are represented among the celebrities.</p>
@@ -101,13 +101,13 @@
                 <input type="radio" name="category-filter" value="party-kings">
                 <span>Party kings</span>
               </label>
-            </li>
+            </li><!--
             <li>
               <label>
                 <input type="radio" name="category-filter" value="special-cases">
                 <span>Special Cases</span>
               </label>
-            </li>
+            </li>//-->
           </ul>
         </form>
 
@@ -210,27 +210,93 @@
           </ul>
         </section>
 
-        <section class="match-details">
+        <section class="match-details"></section>
+      </article>
 
+
+      <article class="description legend">
+        <h2>How open, conscientious, extraverted, agreeable and neurotic are celebrities? </h2>
+
+        <section>
+          <img src="">
+          <h2>Consciousness</h2>
+
+          <div>
+            <svg id="consc"></svg>
+          </div>
+
+          <h3>What does that mean?</h3>
+          <p>Consciousness is a tendency to show self-discipline, act dutifully, and aim for achievement against measures or outside expectations. It is related to the way in which people control, regulate, and direct their impulses. High scores on conscientiousness indicate a preference for planned rather than spontaneous behavior.</p>
+
+          <h3>What’s in the data?</h3>
+          <p>Only 30 per cent of the world’s most famous people tend to be really conscious.  It seems that creativity is valued much higher than duty and a serious attitude to life. David Bowie is among the few conscious ones: his score is 80 which means he’s among less than 10 per cent of celebrities with the same score or higher.</p>
+        </section>
+
+        <section>
+          <img src="">
+          <h2>Openness</h2>
+
+          <div>
+            <svg id="openn"></svg>
+          </div>
+
+          <h3>What does that mean?</h3>
+          <p>Openness is a general appreciation for art, emotion, adventure, unusual ideas, imagination, curiosity, and variety of experience. People who are open to experience are intellectually curious, appreciative of art, and sensitive to beauty. They tend to be more creative and more aware of their feelings.</p>
+
+          <h3>What’s in the data?</h3>
+          <p>Surprise surprise: more than 70 percent of the world’s most powerful celebrities tend to be open to new experiences. Leonardo DiCaprio is an absolute special case: his openness ranking being high, other parameters like extraversion or conscientiousness are only mediocre.</p>
+        </section>
+
+        <section>
+          <img src="">
+          <h2>Extraversion</h2>
+
+          <div>
+            <svg id="extra"></svg>
+          </div>
+
+          <h3>What does that mean?</h3>
+          <p>Extraversion is characterized by breadth of activities (as opposed to depth) and energy creation from external means. Extraverts enjoy interacting with people, and are often perceived as full of energy. They tend to be enthusiastic, action-oriented individuals. They possess high group visibility, like to talk, and assert themselves.</p>
+
+          <h3>What’s in the data?</h3>
+          <p>More than a half of the analyzed celebrities tend to be extroverts, which is really not surprising taking into account their contacts to the outside world. Emma Watson, Gwyneth Paltrow and Yoko Ono are among stars who tend to be extremely extroverted. On the other hand, Gerard Butler and Kelly Osbourne are almost unearthly introverted – their rank is 2 and 0 respectively on the scale of 100.</p>
+        </section>
+
+        <section>
+          <img src="">
+          <h2>Agreeableness</h2>
+
+          <div>
+            <svg id="agree"></svg>
+          </div>
+
+          <h3>What does that mean?</h3>
+          <p>It seems like only half of the celebrities tend to be agreeable – a factor that is extremely important for job promotion in the future and happy marriage. Zack Snyder, Adam Levin and Alicia Keys are the names you need to remember here – all of them rank high on this scale.</p>
+
+          <h3>What’s in the data?</h3>
+          <p>More than a half of the analyzed celebrities tend to be extroverts, which is really not surprising taking into account their contacts to the outside world. Emma Watson, Gwyneth Paltrow and Yoko Ono are among stars who tend to be extremely extroverted. On the other hand, Gerard Butler and Kelly Osbourne are almost unearthly introverted – their rank is 2 and 0 respectively on the scale of 100.</p>
+        </section>
+
+        <section>
+          <img src="">
+          <h2>Neuroticism</h2>
+
+          <div>
+            <svg id="neuro"></svg>
+          </div>
+
+          <h3>What does that mean?</h3>
+          <p>Neuroticism is something you don’t usually want to score high at. It is the tendency to experience negative emotions, such as anger, anxiety, or depression. It is sometimes called emotional instability. Those who score high in neuroticism are emotionally reactive and vulnerable to stress. They are more likely to interpret ordinary situations as threatening, and minor frustrations as hopelessly difficult.</p>
+
+          <h3>What’s in the data?</h3>
+          <p>Most celebrities tend to be somewhere in the middle.  However, Prince Bow and Claudia Jung seem to be a great exception – both of them are in the lower third of other rankings and are at the same time above the average in this category.</p>
         </section>
       </article>
 
 
     </div><!-- "#page" //-->
 
-	<div>
-				<h3>consc</h3>
-			<svg id="consc"></svg>
-			<h3>openn</h3>
-			<svg id="openn"></svg>
-			<h3>extra</h3>
-			<svg id="extra"></svg>
-			<h3>agree</h3>
-			<svg id="agree"></svg>
-			<h3>neuro</h3>
-			<svg id="neuro"></svg>
-	</div>
-	
+
     <script src="./assets/scripts/js/vendors/json2.min.js"></script>
     <script src="./assets/scripts/js/vendors/es5-shim.min.js"></script>
     <script src="./assets/scripts/js/vendors/jquery-1.11.1.min.js"></script>
@@ -255,7 +321,7 @@
 
     <script src="assets/scripts/js/app/presenter/category-filter.js"></script>
     <script src="assets/scripts/js/app/presenter/category-matches.js"></script>
-	
-	<script src="assets/scripts/js/matching.js"></script>
+
+    <script src="assets/scripts/js/matching.js"></script>
   </body>
 </html>

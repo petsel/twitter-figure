@@ -3,9 +3,9 @@ function numsort(a, b) {
 }
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
-	width = 1000 - margin.left - margin.right,
+	width = 650 - margin.left - margin.right,
 	height = 120 - margin.top - margin.bottom,
-	radius = 4;
+	radius = 3;
 
 var x = d3.scale.linear()
 	.domain([0, 100])
