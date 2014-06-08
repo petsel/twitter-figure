@@ -1,0 +1,151 @@
+
+
+dl.traits dt {
+  clear: both;
+  float: left;
+  width: 50%;
+  height: 10px;
+}
+dl.traits dt + dd {
+  position: relative;
+  float: right;
+  width: auto;
+  height: 10px;
+}
+dl.traits dt + dd > span {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: auto;
+  height: 100%;
+  background-color: #55acee;
+}
+
+dl.traits dd[data-value="0"]    > span { width:   0 ; }
+dl.traits dd[data-value="1"]    > span { width:   1%; }
+dl.traits dd[data-value="2"]    > span { width:   2%; }
+dl.traits dd[data-value="3"]    > span { width:   3%; }
+dl.traits dd[data-value="4"]    > span { width:   4%; }
+dl.traits dd[data-value="5"]    > span { width:   5%; }
+dl.traits dd[data-value="6"]    > span { width:   6%; }
+dl.traits dd[data-value="7"]    > span { width:   7%; }
+dl.traits dd[data-value="8"]    > span { width:   8%; }
+dl.traits dd[data-value="9"]    > span { width:   9%; }
+
+dl.traits dd[data-value="10"]   > span { width:  10%; }
+dl.traits dd[data-value="11"]   > span { width:  11%; }
+dl.traits dd[data-value="12"]   > span { width:  12%; }
+dl.traits dd[data-value="13"]   > span { width:  13%; }
+dl.traits dd[data-value="14"]   > span { width:  14%; }
+dl.traits dd[data-value="15"]   > span { width:  15%; }
+dl.traits dd[data-value="16"]   > span { width:  16%; }
+dl.traits dd[data-value="17"]   > span { width:  17%; }
+dl.traits dd[data-value="18"]   > span { width:  18%; }
+dl.traits dd[data-value="19"]   > span { width:  19%; }
+
+dl.traits dd[data-value="20"]   > span { width:  20%; }
+dl.traits dd[data-value="21"]   > span { width:  21%; }
+dl.traits dd[data-value="22"]   > span { width:  22%; }
+dl.traits dd[data-value="23"]   > span { width:  23%; }
+dl.traits dd[data-value="24"]   > span { width:  24%; }
+dl.traits dd[data-value="25"]   > span { width:  25%; }
+dl.traits dd[data-value="26"]   > span { width:  26%; }
+dl.traits dd[data-value="27"]   > span { width:  27%; }
+dl.traits dd[data-value="28"]   > span { width:  28%; }
+dl.traits dd[data-value="29"]   > span { width:  29%; }
+
+dl.traits dd[data-value="30"]   > span { width:  30%; }
+dl.traits dd[data-value="31"]   > span { width:  31%; }
+dl.traits dd[data-value="32"]   > span { width:  32%; }
+dl.traits dd[data-value="33"]   > span { width:  33%; }
+dl.traits dd[data-value="34"]   > span { width:  34%; }
+dl.traits dd[data-value="35"]   > span { width:  35%; }
+dl.traits dd[data-value="36"]   > span { width:  36%; }
+dl.traits dd[data-value="37"]   > span { width:  37%; }
+dl.traits dd[data-value="38"]   > span { width:  38%; }
+dl.traits dd[data-value="39"]   > span { width:  39%; }
+
+dl.traits dd[data-value="40"]   > span { width:  40%; }
+dl.traits dd[data-value="41"]   > span { width:  41%; }
+dl.traits dd[data-value="42"]   > span { width:  42%; }
+dl.traits dd[data-value="43"]   > span { width:  43%; }
+dl.traits dd[data-value="44"]   > span { width:  44%; }
+dl.traits dd[data-value="45"]   > span { width:  45%; }
+dl.traits dd[data-value="46"]   > span { width:  46%; }
+dl.traits dd[data-value="47"]   > span { width:  47%; }
+dl.traits dd[data-value="48"]   > span { width:  48%; }
+dl.traits dd[data-value="49"]   > span { width:  49%; }
+
+dl.traits dd[data-value="50"]   > span { width:  50%; }
+dl.traits dd[data-value="51"]   > span { width:  51%; }
+dl.traits dd[data-value="52"]   > span { width:  52%; }
+dl.traits dd[data-value="53"]   > span { width:  53%; }
+dl.traits dd[data-value="54"]   > span { width:  54%; }
+dl.traits dd[data-value="55"]   > span { width:  55%; }
+dl.traits dd[data-value="56"]   > span { width:  56%; }
+dl.traits dd[data-value="57"]   > span { width:  57%; }
+dl.traits dd[data-value="58"]   > span { width:  58%; }
+dl.traits dd[data-value="59"]   > span { width:  59%; }
+
+dl.traits dd[data-value="60"]   > span { width:  60%; }
+dl.traits dd[data-value="61"]   > span { width:  61%; }
+dl.traits dd[data-value="62"]   > span { width:  62%; }
+dl.traits dd[data-value="63"]   > span { width:  63%; }
+dl.traits dd[data-value="64"]   > span { width:  64%; }
+dl.traits dd[data-value="65"]   > span { width:  65%; }
+dl.traits dd[data-value="66"]   > span { width:  66%; }
+dl.traits dd[data-value="67"]   > span { width:  67%; }
+dl.traits dd[data-value="68"]   > span { width:  68%; }
+dl.traits dd[data-value="69"]   > span { width:  69%; }
+
+dl.traits dd[data-value="70"]   > span { width:  70%; }
+dl.traits dd[data-value="71"]   > span { width:  71%; }
+dl.traits dd[data-value="72"]   > span { width:  72%; }
+dl.traits dd[data-value="73"]   > span { width:  73%; }
+dl.traits dd[data-value="74"]   > span { width:  74%; }
+dl.traits dd[data-value="75"]   > span { width:  75%; }
+dl.traits dd[data-value="76"]   > span { width:  76%; }
+dl.traits dd[data-value="77"]   > span { width:  77%; }
+dl.traits dd[data-value="78"]   > span { width:  78%; }
+dl.traits dd[data-value="79"]   > span { width:  79%; }
+
+dl.traits dd[data-value="80"]   > span { width:  80%; }
+dl.traits dd[data-value="81"]   > span { width:  81%; }
+dl.traits dd[data-value="82"]   > span { width:  82%; }
+dl.traits dd[data-value="83"]   > span { width:  83%; }
+dl.traits dd[data-value="84"]   > span { width:  84%; }
+dl.traits dd[data-value="85"]   > span { width:  85%; }
+dl.traits dd[data-value="86"]   > span { width:  86%; }
+dl.traits dd[data-value="87"]   > span { width:  87%; }
+dl.traits dd[data-value="88"]   > span { width:  88%; }
+dl.traits dd[data-value="89"]   > span { width:  89%; }
+
+dl.traits dd[data-value="90"]   > span { width:  90%; }
+dl.traits dd[data-value="92"]   > span { width:  92%; }
+dl.traits dd[data-value="93"]   > span { width:  93%; }
+dl.traits dd[data-value="94"]   > span { width:  94%; }
+dl.traits dd[data-value="95"]   > span { width:  95%; }
+dl.traits dd[data-value="96"]   > span { width:  96%; }
+dl.traits dd[data-value="97"]   > span { width:  97%; }
+dl.traits dd[data-value="98"]   > span { width:  98%; }
+dl.traits dd[data-value="99"]   > span { width:  99%; }
+
+dl.traits dd[data-value="100"]  > span { width: 100%; }
+
+
+.category-matches dl.traits dt {
+  display: none;
+}
+.category-matches dl.traits dt + dd {
+  float: none;
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin-bottom: 3px;
+}
+.category-matches dl.traits dt + dd > span {
+  font-size: 0;
+  line-height: 0;
+}
