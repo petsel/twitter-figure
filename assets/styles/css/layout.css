@@ -13,7 +13,24 @@ ul, ol, li {
 
 #page {
   position: relative;
-  max-width: 800px;
+  max-width: 860px;
   margin: 20px auto;
 }
+#page .category-matcher {
+  width: 70%;
+}
 
+
+article.intro {
+  text-align: center;
+  margin: 35px 0;
+}
+article.intro h2 {
+  font-size: 1.3em;
+}
+article.intro h2,
+article.intro h5 {
+  margin: 15px 0;
+}
+article.intro p {
+}
