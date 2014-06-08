@@ -7,16 +7,7 @@
 		<link rel="Stylesheet" href="./src/styles/style.css">
 	</head>
 	<body>
-		<h3>consc</h3>
-		<svg id="consc"></svg>
-		<h3>openn</h3>
-		<svg id="openn"></svg>
-		<h3>extra</h3>
-		<svg id="extra"></svg>
-		<h3>agree</h3>
-		<svg id="agree"></svg>
-		<h3>neuro</h3>
-		<svg id="neuro"></svg>
+		<!--<svg class="chart"></svg>-->
 		<script src="./src/scripts/openess.js"></script>
 		<!--<script src="./src/scripts/barchart.js"></script>-->
 	</body>

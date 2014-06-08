@@ -4,7 +4,7 @@ function numsort(a, b) {
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
 	width = 1000 - margin.left - margin.right,
-	height = 120 - margin.top - margin.bottom,
+	height = 200 - margin.top - margin.bottom,
 	radius = 4;
 
 var x = d3.scale.linear()

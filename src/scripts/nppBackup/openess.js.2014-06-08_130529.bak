@@ -4,7 +4,7 @@ function numsort(a, b) {
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
 	width = 1000 - margin.left - margin.right,
-	height = 120 - margin.top - margin.bottom,
+	height = 200 - margin.top - margin.bottom,
 	radius = 4;
 
 var x = d3.scale.linear()
@@ -30,31 +30,31 @@ var yAxis = d3.svg.axis()
 	.scale(y)
 	.orient('left');
 
-var svg1 = d3.select('#consc')
+var svg1 = d3.select('body').append('svg')
 	.attr('width', width + margin.left + margin.right)
 	.attr('height', height + margin.top + margin.bottom)
 	.append('g')
 	.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 	
-var svg2 = d3.select('#openn')
+var svg2 = d3.select('body').append('svg')
 	.attr('width', width + margin.left + margin.right)
 	.attr('height', height + margin.top + margin.bottom)
 	.append('g')
 	.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-var svg3 = d3.select('#extra')
+var svg3 = d3.select('body').append('svg')
 	.attr('width', width + margin.left + margin.right)
 	.attr('height', height + margin.top + margin.bottom)
 	.append('g')
 	.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 	
-var svg4 = d3.select('#agree')
+var svg4 = d3.select('body').append('svg')
 	.attr('width', width + margin.left + margin.right)
 	.attr('height', height + margin.top + margin.bottom)
 	.append('g')
 	.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-var svg5 = d3.select('#neuro')
+var svg5 = d3.select('body').append('p').text('TEST').style('color', 'red').append('svg')
 	.attr('width', width + margin.left + margin.right)
 	.attr('height', height + margin.top + margin.bottom)
 	.append('g')
