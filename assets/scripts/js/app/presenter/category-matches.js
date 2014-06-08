@@ -17,6 +17,7 @@
     module,
 
 
+    $matchDetails,
     $categoryMatches,
     $categoryMatchList,
 
@@ -57,15 +58,33 @@ console.log("CategoryMatches :: handleCategoryChange", evt);
     },
 
 
+    showMatchDetailsFromItemQuery = function ($matchItem) {
+
+      $matchDetails.empty();
+      $matchItem.children().toArray().forEach(function (childNode/*, idx list*/) {
+
+        $matchDetails[0].appendChild(childNode.cloneNode(true));
+      });
+    },
+    handleMatchDetails = function (evt) {
+      evt.stopPropagation();
+
+      showMatchDetailsFromItemQuery($(evt.currentTarget));
+    },
+
+
     initializePresenter = function () {
 console.log("CategoryMatches :: initializePresenter");
 
       MatchesView.initialize();
 
+      $matchDetails = $(".category-matcher").find(".match-details");
       $categoryMatches = $(".category-matcher").find(".category-matches");
-      $categoryMatchList = $categoryMatches.find("> ul")
+      $categoryMatchList = $categoryMatches.find("> ul");
 
       createMatchList();
+
+      $categoryMatches.on("click", "> ul > li", handleMatchDetails)
 
       CategoryFilter.addEventListener("categorychange", handleCategoryChange);
       CategoryFilter.initialize();
