@@ -1,5 +1,3 @@
-
-
 /**
  *  poor men's module - but is considered to be sufficient enough in oder to solve the task.
  */
@@ -18,7 +16,7 @@
       "matchesRoot" : '<ul\/>',
       "matchItem"   : [
                       '<li>',
-                        '<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="avatar of " title="">',
+                        '<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="avatar or real picture of " title="">',
                         '<h3><\/h3>',
                         '<h4><\/h4>',
                       '<\/li>'
@@ -104,9 +102,8 @@ console.log("CategoryMatches ::  VIEW :: initializeView", partials);
 
   module = {
 
-    render      : renderMatchList,
   //renderMatch : renderMatch,            // - could be exposed for better code reuse if necessary.
-  //renderSpace : renderSpace,            // - could be exposed for better code reuse if necessary.
+    render      : renderMatchList,
     initialize  : initializeView
   };
   return (appRoot.view.CategoryMatches = module);

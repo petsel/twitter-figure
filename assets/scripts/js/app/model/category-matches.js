@@ -12,14 +12,6 @@
     toNumber = global.Number,
 
 
-  //createCopy = function (blueprint) {                       // see messages of next comment block below.
-  //
-  //  var GreenBody = function () {};
-  //  GreenBody.prototype = blueprint;
-  //  return (new GreenBody);
-  //},
-
-
     noop = function () {},
 
 
@@ -129,11 +121,8 @@
 
   module = {
 
-  //copyModel   : createCopy, // need to figure out why this didn't really work out - prototypal copy on write clones are faster.
-    copyModel   : reduceMatchDataList,
-    createModel : reduceMatchDataList,
-
-    filterModelByCategory: filterModelByCategory
+    filterModelByCategory : filterModelByCategory,
+    createModel           : reduceMatchDataList
   };
 
 

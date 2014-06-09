@@ -8,10 +8,10 @@
     Observable = global.Observable_SignalsAndSlots,
 
 
-    MatchesModel  = appRoot.model.CategoryMatches,
-    MatchesView   = appRoot.view.CategoryMatches,
+    MatchesModel    = appRoot.model.CategoryMatches,
+    MatchesView     = appRoot.view.CategoryMatches,
 
-    CategoryFilter        = appRoot.presenter.CategoryFilter,
+    CategoryFilter  = appRoot.presenter.CategoryFilter,
 
 
     module,
@@ -100,8 +100,11 @@ console.log("CategoryMatches :: initializePresenter");
 
       MatchesView.initialize();
 
-      $matchDetails = $(".category-matcher").find(".match-details");
-      $categoryMatches = $(".category-matcher").find(".category-matches");
+      var $matcher = $(".category-matcher");
+
+      $matchDetails = $matcher.find(".match-details");
+      $categoryMatches = $matcher.find(".category-matches");
+
       $categoryMatchList = $categoryMatches.find("> ul");
 
       createMatchList();
