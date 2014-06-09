@@ -21,7 +21,7 @@ ul, ol, li {
 #page {
   position: relative;
   max-width: 860px;
-  margin: 20px auto;
+  margin: 20px auto 50px auto;
 }
 #page .category-matcher {
   width: 70%;
@@ -56,6 +56,9 @@ article.description.legend h2 {
 }
 article.description.legend h3 {
   margin: 15px 0 5px 0;
+}
+article > p {
+  margin-top: 7px;
 }
 
 

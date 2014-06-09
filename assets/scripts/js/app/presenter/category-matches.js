@@ -32,6 +32,7 @@
 
     clearMatchDetails = function () {
       $matchDetails.empty();
+      $matchDetails.hide();
     },
     clearMatchList = function () {
       $categoryMatchList.empty();
@@ -80,6 +81,7 @@ console.log("CategoryMatches :: createMatchList", baseMatchesModel);
 
         $matchDetails[0].appendChild(childNode.cloneNode(true));
       });
+      $matchDetails.show();
     },
 
 
@@ -107,6 +109,7 @@ console.log("CategoryMatches :: initializePresenter");
 
       $categoryMatchList = $categoryMatches.find("> ul");
 
+      clearMatchDetails();
       createMatchList();
 
       $categoryMatches.on("click", "> ul > li", handleMatchDetails);
