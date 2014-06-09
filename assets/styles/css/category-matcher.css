@@ -32,6 +32,35 @@
   width: 100%;
 }
 
+
+.category-filter {
+  position: relative;
+}
+.category-filter label > span {
+  z-index: 1;
+  position: relative;
+  margin-right: 2px;
+  padding: 3px 4px 5px 4px;
+  border-radius: 0;
+  border: 2px outset #55acee;
+  background-color: #61BBFF;
+  font-size: 14px;
+}
+.category-filter label > input[type="radio"],
+.category-filter label > input[type="checkbox"] {/*
+  z-index: 0;*/
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  bottom: 0;
+}
+.category-filter label > input[type="radio"]:checked + span,
+.category-filter label > input[type="checkbox"]:checked + span {
+  border-style: inset;
+}
+
+
 .category-matches li > :not(img) {
   display: none;
 }
@@ -65,9 +94,13 @@
 
 
 .match-details {
+  z-index: 1;
   position: fixed;
-  right: 20%;
-  top: 35.4%;
+  left: 255%;
+  bottom: 12%;
+  background: rgba(255, 255, 255, .8);
+  margin-left: -185%;
+  padding: 10px;
 }
 .match-details h3,
 .match-details h4 {
