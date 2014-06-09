@@ -5,7 +5,7 @@ function numsort(a, b) {
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
 	width = 650 - margin.left - margin.right,
 	height = 120 - margin.top - margin.bottom,
-	radius = 3;
+	radius = 2.5;
 
 var x = d3.scale.linear()
 	.domain([0, 100])
@@ -60,7 +60,19 @@ var svg5 = d3.select('#neuro')
 	.append('g')
 	.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 	
-	
+
+var tooltip = d3.select("body")
+	.append("div")
+	.style("background-color", "#fff")
+	.style("border", "1px solid #333")
+	.style("color", "#f00")
+	.style("font-size", "11px")
+	.style("padding", "2px")
+	.style("position", "absolute")
+	.style("z-index", "10")
+	.style("visibility", "hidden")
+	.text('Name');
+
 d3.tsv('./assets/data/agree.tsv', function(error, data) {
 	var cleanDataObj = {}, cleanDataXAry = [], cleanDataYAry = [];
 
@@ -94,14 +106,14 @@ d3.tsv('./assets/data/agree.tsv', function(error, data) {
 				console.log(typeof d);
 
 				if (d in coordObj) {
-					coordObj[d].push((height - ((radius * 2.5) * j)) - (radius * 2));
+					coordObj[d].push((height - ((radius * 3) * j)) - (radius * 2));
 				}
 				else {
-					coordObj[d] = [(height - ((radius * 2.5) * j)) - (radius * 2)];
+					coordObj[d] = [(height - ((radius * 3) * j)) - (radius * 2)];
 				}
 
 				console.log(coordObj);
-				cleanDataYAry.push((height - ((radius * 2.5) * j)) - (radius * 2));
+				cleanDataYAry.push((height - ((radius * 3) * j)) - (radius * 2));
 			}
 		}
 		else {
@@ -165,7 +177,23 @@ d3.tsv('./assets/data/agree.tsv', function(error, data) {
 		.data(coordYAry)
 		.attr('cy', function(d) { console.log('YY: ' + d); return d; })
 		
-		.style('fill', '#00CC00');
+		.on('mouseover', function(){
+			d3.select(this).style({opacity: '.6'});
+			return tooltip.style('visibility', 'visible');
+		})
+		
+		.on('mousemove', function(){
+			d3.select(this).style({opacity: '.6'});
+			return tooltip.style('top', (d3.event.pageY - 10) + 'px').style('left', (d3.event.pageX + 10) + 'px');
+		})
+		
+		.on('mouseout', function(){
+			d3.select(this).style({opacity: '1',})
+			return tooltip.style('visibility', 'hidden');
+		})
+		
+		.style("stroke-width", .3)
+		.style('fill', '#00cc00');
 });
 
 
@@ -202,14 +230,14 @@ d3.tsv('./assets//data/consc.tsv', function(error, data) {
 				console.log(typeof d);
 
 				if (d in coordObj) {
-					coordObj[d].push((height - ((radius * 2.5) * j)) - (radius * 2));
+					coordObj[d].push((height - ((radius * 3) * j)) - (radius * 2));
 				}
 				else {
-					coordObj[d] = [(height - ((radius * 2.5) * j)) - (radius * 2)];
+					coordObj[d] = [(height - ((radius * 3) * j)) - (radius * 2)];
 				}
 
 				console.log(coordObj);
-				cleanDataYAry.push((height - ((radius * 2.5) * j)) - (radius * 2));
+				cleanDataYAry.push((height - ((radius * 3) * j)) - (radius * 2));
 			}
 		}
 		else {
@@ -273,6 +301,22 @@ d3.tsv('./assets//data/consc.tsv', function(error, data) {
 		.data(coordYAry)
 		.attr('cy', function(d) { console.log('YY: ' + d); return d; })
 		
+		.on('mouseover', function(){
+			d3.select(this).style({opacity: '.6'});
+			return tooltip.style('visibility', 'visible');
+		})
+		
+		.on('mousemove', function(){
+			d3.select(this).style({opacity: '.6'});
+			return tooltip.style('top', (d3.event.pageY - 10) + 'px').style('left', (d3.event.pageX + 10) + 'px');
+		})
+		
+		.on('mouseout', function(){
+			d3.select(this).style({opacity: '1',})
+			return tooltip.style('visibility', 'hidden');
+		})
+		
+		.style("stroke-width", .3)		
 		.style('fill', '#1A1EB2');
 });
 
@@ -310,14 +354,14 @@ d3.tsv('./assets//data/extra.tsv', function(error, data) {
 				console.log(typeof d);
 
 				if (d in coordObj) {
-					coordObj[d].push((height - ((radius * 2.5) * j)) - (radius * 2));
+					coordObj[d].push((height - ((radius * 3) * j)) - (radius * 2));
 				}
 				else {
-					coordObj[d] = [(height - ((radius * 2.5) * j)) - (radius * 2)];
+					coordObj[d] = [(height - ((radius * 3) * j)) - (radius * 2)];
 				}
 
 				console.log(coordObj);
-				cleanDataYAry.push((height - ((radius * 2.5) * j)) - (radius * 2));
+				cleanDataYAry.push((height - ((radius * 3) * j)) - (radius * 2));
 			}
 		}
 		else {
@@ -381,6 +425,22 @@ d3.tsv('./assets//data/extra.tsv', function(error, data) {
 		.data(coordYAry)
 		.attr('cy', function(d) { console.log('YY: ' + d); return d; })
 		
+		.on('mouseover', function(){
+			d3.select(this).style({opacity: '.6'});
+			return tooltip.style('visibility', 'visible');
+		})
+		
+		.on('mousemove', function(){
+			d3.select(this).style({opacity: '.6'});
+			return tooltip.style('top', (d3.event.pageY - 10) + 'px').style('left', (d3.event.pageX + 10) + 'px');
+		})
+		
+		.on('mouseout', function(){
+			d3.select(this).style({opacity: '1',})
+			return tooltip.style('visibility', 'hidden');
+		})
+		
+		.style("stroke-width", .3)
 		.style('fill', '#FF7400');
 });
 
@@ -418,14 +478,14 @@ d3.tsv('./assets//data/neuro.tsv', function(error, data) {
 				console.log(typeof d);
 
 				if (d in coordObj) {
-					coordObj[d].push((height - ((radius * 2.5) * j)) - (radius * 2));
+					coordObj[d].push((height - ((radius * 3) * j)) - (radius * 2));
 				}
 				else {
-					coordObj[d] = [(height - ((radius * 2.5) * j)) - (radius * 2)];
+					coordObj[d] = [(height - ((radius * 3) * j)) - (radius * 2)];
 				}
 
 				console.log(coordObj);
-				cleanDataYAry.push((height - ((radius * 2.5) * j)) - (radius * 2));
+				cleanDataYAry.push((height - ((radius * 3) * j)) - (radius * 2));
 			}
 		}
 		else {
@@ -489,6 +549,22 @@ d3.tsv('./assets//data/neuro.tsv', function(error, data) {
 		.data(coordYAry)
 		.attr('cy', function(d) { console.log('YY: ' + d); return d; })
 		
+		.on('mouseover', function(){
+			d3.select(this).style({opacity: '.6'});
+			return tooltip.style('visibility', 'visible');
+		})
+		
+		.on('mousemove', function(){
+			d3.select(this).style({opacity: '.6'});
+			return tooltip.style('top', (d3.event.pageY - 10) + 'px').style('left', (d3.event.pageX + 10) + 'px');
+		})
+		
+		.on('mouseout', function(){
+			d3.select(this).style({opacity: '1',})
+			return tooltip.style('visibility', 'hidden');
+		})
+		
+		.style("stroke-width", .3)
 		.style('fill', '#7109AA');
 });
 
@@ -526,14 +602,14 @@ d3.tsv('./assets//data/openn.tsv', function(error, data) {
 				console.log(typeof d);
 
 				if (d in coordObj) {
-					coordObj[d].push((height - ((radius * 2.5) * j)) - (radius * 2));
+					coordObj[d].push((height - ((radius * 3) * j)) - (radius * 2));
 				}
 				else {
-					coordObj[d] = [(height - ((radius * 2.5) * j)) - (radius * 2)];
+					coordObj[d] = [(height - ((radius * 3) * j)) - (radius * 2)];
 				}
 
 				console.log(coordObj);
-				cleanDataYAry.push((height - ((radius * 2.5) * j)) - (radius * 2));
+				cleanDataYAry.push((height - ((radius * 3) * j)) - (radius * 2));
 			}
 		}
 		else {
@@ -597,5 +673,21 @@ d3.tsv('./assets//data/openn.tsv', function(error, data) {
 		.data(coordYAry)
 		.attr('cy', function(d) { console.log('YY: ' + d); return d; })
 		
+		.on('mouseover', function(){
+			d3.select(this).style({opacity: '.6'});
+			return tooltip.style('visibility', 'visible');
+		})
+		
+		.on('mousemove', function(){
+			d3.select(this).style({opacity: '.6'});
+			return tooltip.style('top', (d3.event.pageY - 10) + 'px').style('left', (d3.event.pageX + 10) + 'px');
+		})
+		
+		.on('mouseout', function(){
+			d3.select(this).style({opacity: '1',})
+			return tooltip.style('visibility', 'hidden');
+		})
+		
+		.style("stroke-width", .3)
 		.style('fill', '#BF3030');
 });
