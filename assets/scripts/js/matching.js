@@ -188,7 +188,7 @@ d3.tsv('./assets/data/agree.tsv', function(error, data) {
 		})
 		
 		.on('mouseout', function(){
-			d3.select(this).style({opacity: '1',})
+			d3.select(this).style({opacity: '1'})
 			return tooltip.style('visibility', 'hidden');
 		})
 		
@@ -312,7 +312,7 @@ d3.tsv('./assets//data/consc.tsv', function(error, data) {
 		})
 		
 		.on('mouseout', function(){
-			d3.select(this).style({opacity: '1',})
+			d3.select(this).style({opacity: '1'})
 			return tooltip.style('visibility', 'hidden');
 		})
 		
@@ -436,7 +436,7 @@ d3.tsv('./assets//data/extra.tsv', function(error, data) {
 		})
 		
 		.on('mouseout', function(){
-			d3.select(this).style({opacity: '1',})
+			d3.select(this).style({opacity: '1'})
 			return tooltip.style('visibility', 'hidden');
 		})
 		
@@ -560,7 +560,7 @@ d3.tsv('./assets//data/neuro.tsv', function(error, data) {
 		})
 		
 		.on('mouseout', function(){
-			d3.select(this).style({opacity: '1',})
+			d3.select(this).style({opacity: '1'})
 			return tooltip.style('visibility', 'hidden');
 		})
 		
@@ -684,7 +684,7 @@ d3.tsv('./assets//data/openn.tsv', function(error, data) {
 		})
 		
 		.on('mouseout', function(){
-			d3.select(this).style({opacity: '1',})
+			d3.select(this).style({opacity: '1'})
 			return tooltip.style('visibility', 'hidden');
 		})
 		
