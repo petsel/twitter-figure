@@ -3,6 +3,8 @@ twitter-figure
 
 Hamburg Hackaton (#hackathonHH) Frontend Hack Repro
 
+Working hackathon result can be seen at http://petsel.github.io/twitter-figure/
+
 
 
 #Personality types of world’s most powerful celebrities: Who knew Barack Obama had a creative mind?
